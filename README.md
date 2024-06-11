@@ -1,2 +1,2 @@
 # Devito Scripts
-SOme Devito scripts focused on forward modeling.
+Some Devito scripts focused on forward modeling.
