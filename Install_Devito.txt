@@ -1,0 +1,29 @@
+Installing Devito on a Windows machine
+It works well, but it supposes to install Linux subsystem for windows.
+
+Refer to this:
+https://medium.com/@soulfoodpst/install-devito-on-windows-a-tool-for-automatic-programming-3def3949e5c8
+
+So first install Ubuntu in Linux subsystem for windows.
+
+then make sure gcc is there:
+gcc --version
+
+
+Now disable your firewall if any, as it may prevent the Linux subsystem to access the internet 
+
+download Linux Anaconda from: 
+https://www.anaconda.com/distribution/
+
+and execute the Anaconda Install script:
+bash Anaconda3-2024.02-1-Linux-x86_64.sh
+
+Then do:
+conda env create -f environment-dev.yml
+source activate devito
+pip install -e .
+pip install pytest
+pip install scipy
+pip install matplotlib
+
+python /mnt/g/Dropbox/coding/Python/Devito/Devito01.py
